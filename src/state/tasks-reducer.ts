@@ -42,9 +42,6 @@ type ActionType = RemoveTaskActionType | AddTaskTaskActionType | ChangeStatusAct
 
 
 
-// меня вызовут и дадут мне стейт (почти всегда объект)
-// и инструкцию (action, тоже объект)
-// согласно прописаному type в этом action (инструкции) я поменяю state
 export const tasksReducer = (state: TasksStateType, action: ActionType) => {
     switch (action.type) {
         case 'REMOVE-TASK':
@@ -101,7 +98,3 @@ export const changeTaskStatusAC = (taskID: string, isDone: boolean, todolistId: 
 export const changeTaskTitleAC = (taskID: string, todolistId: string, title: string): changeTaskTitleActionType => {
     return { type: 'CHANGE-TITLE', taskID, todolistId, title}
 }
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
