@@ -30,11 +30,11 @@ function App() {
     let [tasks, setTasks] = useState<TasksStateType>({
         [todolistId1]: [
             {id: v1(), title: "React", isDone: true},
-            {id: v1(), title: "Redux", isDone: true}
-            {id: v1(), title: "TypeScript", isDone: true}
-            {id: v1(), title: "HTML/CSS/JS", isDone: true}
-            {id: v1(), title: "Redux Toolkit", isDone: true}
-            {id: v1(), title: "Hook / HOC", isDone: true}
+            {id: v1(), title: "Redux", isDone: true},
+            {id: v1(), title: "TypeScript", isDone: true},
+            {id: v1(), title: "HTML/CSS/JS", isDone: true},
+            {id: v1(), title: "Redux Toolkit", isDone: true},
+            {id: v1(), title: "Hook / HOC", isDone: true},
         ],
         [todolistId2]: [
             {id: v1(), title: "Milk", isDone: true},
